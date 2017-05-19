@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Sorting Algorithms</string>
+    <string name="show_algorithms">SHOW ALGORITHMS</string>
+    <string name="selection_sort">SELECTION SORT</string>
+    <string name="bubble_sort">BUBBLE SORT</string>
+    <string name="heap_sort">HEAP SORT</string>
+    <string name="insertion_sort">INSERTION SORT</string>
+    <string name="radix_sort">RADIX SORT</string>
+    <string name="merge_sort">MERGE SORT</string>
+    <string name="numbers">3 4 12 5 7 1 15 8</string>
+    <string name="restart">RESTART</string>
+    <string name="best">Best:</string>
+    <string name="average">Average:</string>
+    <string name="worst">Worst:</string>
+    <string name="memory">Memory:</string>
+    <string name="stable">Stable:</string>
+    <string name="method">Method:</string>
+    <string name="shell_sort">SHELL SORT</string>
+    <string name="comb_short">COMB SHORT</string>
+    <string name="counting_sort">COUNTING SORT</string>
+    <string name="n_2_k"><![CDATA[n<<2^k:]]></string>
+    <string name="bucket_sort">BUCKET SORT</string>
+</resources>

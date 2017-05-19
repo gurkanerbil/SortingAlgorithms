@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bubble_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bubble_sort" />
+
+        <Button
+            android:id="@+id/heap_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/heap_sort" />
+
+        <Button
+            android:id="@+id/insertion_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insertion_sort" />
+
+        <Button
+            android:id="@+id/merge_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/merge_sort" />
+
+        <Button
+            android:id="@+id/radix_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radix_sort" />
+
+        <Button
+            android:id="@+id/selection_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selection_sort" />
+
+        <Button
+            android:id="@+id/shell_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shell_sort" />
+
+        <Button
+            android:id="@+id/comb_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comb_short" />
+
+        <Button
+            android:id="@+id/counting_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/counting_sort" />
+
+        <Button
+            android:id="@+id/bucket_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bucket_sort" />
+
+    </LinearLayout>
+</ScrollView>
