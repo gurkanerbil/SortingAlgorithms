@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.erbil.sortingalgorithms.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sort_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/numbers"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/show_algorithms_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_algorithms" />
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/restart"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/comparsion"
+        android:layout_below="@+id/layout_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_best"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/best"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/best_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/best"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_average"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_best"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/average"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/average_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/average"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_worst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_average"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/worst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/worst"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/worst_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/worst"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_below="@id/comparsion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_memory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/memory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/memory"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/memory_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/memory"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_stable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_memory">
+
+            <TextView
+                android:id="@+id/stable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stable"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/stable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/stable"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layout_stable">
+
+            <TextView
+                android:id="@+id/method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/method"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/method_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/method"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/layout_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/n2k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_2_k"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/n2k_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/n2k"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
